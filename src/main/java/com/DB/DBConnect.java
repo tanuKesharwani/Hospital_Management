@@ -1,4 +1,4 @@
-package com.servlet;
+package com.DB;
 
 
 
@@ -26,5 +26,9 @@ public class DBConnect {
 	   
 	   
    }
+public static Connection getConn1() {
+	// TODO Auto-generated method stub
+	return null;
+}
 }
 

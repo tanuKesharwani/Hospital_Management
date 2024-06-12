@@ -14,6 +14,8 @@ import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 
+import Entity.UserDetails;
+
 
 /**
  * Servlet implementation class UserLogin

@@ -29,4 +29,24 @@
     <servlet-name>UserLogin</servlet-name>
     <url-pattern>/UserLogin</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DoctorAdds</display-name>
+    <servlet-name>DoctorAdds</servlet-name>
+    <servlet-class>com.servlet.DoctorAdds</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorAdds</servlet-name>
+    <url-pattern>/DoctorAdds</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>DoctorLogin</display-name>
+    <servlet-name>DoctorLogin</servlet-name>
+    <servlet-class>com.servlet.DoctorLogin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DoctorLogin</servlet-name>
+    <url-pattern>/DoctorLogin</url-pattern>
+  </servlet-mapping>
 </web-app>

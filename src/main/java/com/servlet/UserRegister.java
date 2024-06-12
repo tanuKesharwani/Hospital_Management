@@ -9,6 +9,11 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 
+import com.DB.DBConnect;
+import com.Dao.UserDao;
+
+import Entity.UserDetails;
+
 
 
 /**
@@ -29,7 +34,13 @@ public class UserRegister extends HttpServlet {
 		us.setEmail(email);
 		us.setPassword(password);
 		
-		UserDao ud=new UserDao(DBConnect.getConn());
+		UserDao ud = null;
+		try {
+			ud = new UserDao(DBConnect.getConn());
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		boolean f=ud.addUser(us);
 		HttpSession session;
 		

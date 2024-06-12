@@ -1,5 +1,27 @@
+<%@page import="com.Dao.UserDao"%>
+<%@page import="javax.print.Doc"%>
+<%@page import="com.DB.DBConnect"%>
+<%@page import="java.util.*"%>
+<%@page import="Entity.DoctorDetails"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    
+    
+<%--     
+<%
+DoctorDetails user3 = (DoctorDetails) session.getAttribute("msg1");
+
+if (user3 == null) {
+
+	response.sendRedirect("DoctorAdd.jsp");
+	session.setAttribute("login-Error", "Please login..");
+%>
+<%
+}
+%>
+ --%>
+
+    
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,7 +29,16 @@
 <title>Insert title here</title><%@include file="Components/Allcss.jsp"%>
 </head>
 <body>
-<%@include file="Components/Navbar.jsp"%>
+
+<%
+DoctorDetails dd=new DoctorDetails();
+
+
+
+
+
+%>
+<%@include file="Components/AdminNavbar.jsp"%>
 <div class="container-fluid">
 		<div class="row">
 			<div class="col-md-3 offset-md-0">
@@ -17,7 +48,7 @@
 						<h4>Add Doctor</h4>
 					</div>
 					<div class="card-body">
-						<form action="UserRegister" method="post">
+						<form action="DoctorAdds" method="post">
 						
 						 <div class="form-group">
 								<label for="name">Full Name</label> <input
@@ -105,6 +136,17 @@
 								<th scope="col">Password</th>
 							</tr>
 						</thead>
+				<%-- 		<% if (user3 != null) {
+							UserDao ob=new UserDao(DBConnect.getConn());
+				
+					List<DoctorDetails> post = ob.getDoctor(user3.getId());
+					for (DoctorDetails po : post){
+					
+					
+					
+					%>
+						 --%>
+						
 						<tbody>
 							<tr>
 								<th scope="row">1</th>
@@ -115,6 +157,13 @@
 								<td>@mdo</td>
 								<td>@mdo</td>
 							</tr>
+							
+		<%-- 	<%
+					}
+					
+						
+					}
+			%> --%>
 						
 					
 					</table>

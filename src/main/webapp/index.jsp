@@ -98,35 +98,27 @@
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
-			
+
 			<div class="col-md-4 mt-20">
-			<img alt="" src="All_Image/AllD.jpg" height="300px" width="300px">
+				<img alt="" src="All_Image/AllD.jpg" height="300px" width="300px">
 			</div>
 		</div>
 
 
 	</div>
-	
-	
-	<div>
-	
-	
-	
-	
-	
-	
-	
-	</div>
-	
-	
-	
-	
-	
-	
-	
-	
+
+
+	<div></div>
+
+
+
+
+
+
+
+
 
 
 </body>
